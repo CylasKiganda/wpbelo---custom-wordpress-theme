@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sparkling Earth</title>
+  </head>
+  <body>
+    <div class="earth-container">
+      <div class="sparkling-text">Your Sparkling Text Here</div>
+      <img src="earth-image.jpg" alt="Earth Image" class="earth-image" />
+    </div>
+  </body>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .earth-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .earth-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(70%); /* Adjust brightness as needed */
+    }
+
+    .sparkling-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2em; /* Adjust font size as needed */
+      color: #fff; /* Text color */
+      font-family: "Arial", sans-serif; /* Choose the desired font */
+      animation: sparkle 2s infinite;
+    }
+
+    @keyframes sparkle {
+      0%,
+      100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
+          0 0 40px #ffcc00, 0 0 70px #ffcc00, 0 0 80px #ffcc00,
+          0 0 100px #ffcc00, 0 0 150px #ffcc00;
+      }
+      50% {
+        text-shadow: none;
+      }
+    }
+  </style>
+</html>
