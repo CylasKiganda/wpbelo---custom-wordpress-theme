@@ -874,11 +874,11 @@ Banner Style
 
 .main-banner {
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 73px 0px 120px 0px;
-  position: relative;
-  overflow: hidden;
+  /* background-position: center center; */
+  /* background-size: cover; */
+  /* padding: 73px 0px 120px 0px; */
+  /* position: relative; */
+  /* overflow: hidden; */
 }
 
 .main-banner-deact:after {
@@ -904,7 +904,9 @@ Banner Style
 }
 
 .main-banner .left-content {
-  margin-right: 45px;
+  margin-right: 0px !important;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-banner .left-content h6 {
@@ -915,9 +917,9 @@ Banner Style
 }
 
 .main-banner .left-content h2 {
-  font-size: 50px;
+  font-size: 74px;
   font-weight: 700;
-  color: #b72323;
+  color: #ffffff;
   line-height: 72px;
 }
 
@@ -927,7 +929,7 @@ Banner Style
 }
 
 .main-banner .left-content h2 span {
-  color: #198a8b;
+  color: #e9c064;
 }
 
 .main-banner .left-content p {
@@ -939,6 +941,7 @@ Banner Style
   margin-top: 30px;
   width: 470px;
   height: 66px;
+  align-self: center;
   position: relative;
 }
 
@@ -962,7 +965,7 @@ Banner Style
 .main-banner .left-content form input {
   width: 470px;
   height: 66px;
-  background-color: #1d3838;
+  background-color: #6c4848;
   border-radius: 33px;
   border: none;
   outline: none;

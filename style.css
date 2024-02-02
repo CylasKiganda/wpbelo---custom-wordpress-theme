@@ -1080,12 +1080,12 @@ header .custom-logo {
   height: 100%;
   border-left: 1.1px solid #d7c4b4;
   border-style: dashed;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 .belo-grid-last {
   height: 100%;
   border-left: 1.1px solid #d7c4b4;
-  opacity: 0.4;
+  opacity: 0.2;
   border-right: 1.1px solid #d7c4b4;
   border-style: dashed;
 }
@@ -1099,4 +1099,39 @@ header .custom-logo {
   left: 0px;
   opacity: 0.95;
   background-repeat: repeat;
+}
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  min-height: 675px;
+  padding-bottom: 100px;
+}
+.main-banner {
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+}
+#search {
+  align-self: center;
+}
+.main-banner .left-content {
+  margin-right: 0px !important;
+  display: flex;
+  flex-direction: column;
+}
+#page > .container {
+  z-index: 100;
+}
+
+@media (max-width: 500px) {
+  .main-banner .left-content h2 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 44px;
+  }
 }

@@ -138,12 +138,13 @@ add_action( 'widgets_init', 'wpbelo_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wpbelo_scripts() {
-	wp_enqueue_style( 'wpbelo-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style('wpbelo-belo-pack',get_template_directory_uri() . '/belo-pack/assets/css/belo-pack.css',array(), _S_VERSION);
+
+	wp_enqueue_style( 'wpbelo-style', get_stylesheet_uri(), array("wpbelo-belo-pack"), _S_VERSION );
 	wp_style_add_data( 'wpbelo-style', 'rtl', 'replace' );
 
 	wp_enqueue_style('wpbelo-bootstrap',get_template_directory_uri() . '/belo-pack/vendor/bootstrap/css/bootstrap.min.css',array(), _S_VERSION);
 	wp_enqueue_style('wpbelo-fontawesome',get_template_directory_uri() . '/belo-pack/assets/css/fontawesome.css',array(), _S_VERSION);
-	wp_enqueue_style('wpbelo-belo-pack',get_template_directory_uri() . '/belo-pack/assets/css/belo-pack.css',array(), _S_VERSION);
 	wp_enqueue_style('wpbelo-animated',get_template_directory_uri() . '/belo-pack/assets/css/animated.css',array(), _S_VERSION);
 	wp_enqueue_style('wpbelo-owl',get_template_directory_uri() . '/belo-pack/assets/css/owl.css',array(), _S_VERSION);
 	                                                        
