@@ -1091,7 +1091,7 @@ header .custom-logo {
 }
 #page::before {
   content: "";
-  background-image: url(https://localhost/kardes/wp-content/themes/wpbelo/bg-svg.SvG);
+  background-image: url(/wp-content/themes/wpbelo/bg-svg.svg);
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1124,7 +1124,7 @@ header .custom-logo {
   flex-direction: column;
 }
 #page > .container {
-  z-index: 100;
+  z-index: 87;
 }
 
 @media (max-width: 500px) {
@@ -1134,4 +1134,108 @@ header .custom-logo {
     color: #ffffff;
     line-height: 44px;
   }
+}
+
+.wpforms-container .wpforms-submit-container {
+  clear: both;
+  position: unset !important;
+}
+.wpforms-field.wpforms-field-email,
+.wpforms-field.wpforms-field-url {
+  background: transparent;
+  padding: 0px;
+  border-radius: 40px;
+  position: absolute;
+}
+div.wpforms-container-full input[type="email"]:focus {
+  border: none !important;
+}
+div.wpforms-container-full .wpforms-confirmation-container-full {
+  background: #3a3737;
+  border: 1px solid #b4d39b05;
+  border-radius: 40px;
+}
+div.wpforms-container-full .wpforms-confirmation-container-full p {
+  color: #36ef0a;
+}
+#search {
+  display: none !important;
+}
+
+@media (max-width: 800px) {
+  div.wpforms-container-full {
+    width: 93% !important;
+  }
+  .custom-video {
+    height: 65% !important;
+  }
+}
+
+.main-banner .wpforms-field-container {
+  display: flex !important;
+  background-color: #6c4848;
+  border-radius: 33px;
+  height: 60px;
+  align-items: center;
+  position: relative;
+}
+
+.wpforms-field.wpforms-field-url {
+  left: 10px;
+  top: 16px;
+}
+.wpforms-field.wpforms-field-email {
+  left: 191px;
+  top: 16px;
+}
+@media (max-width: 500px) {
+  .wpforms-field.wpforms-field-url {
+    left: 10px;
+    top: 15px;
+  }
+  .wpforms-field.wpforms-field-email {
+    left: 167px;
+    top: 14px;
+  }
+}
+.main-banner .wpforms-container .wpforms-field-label {
+  position: absolute;
+  top: -2px;
+  left: 13px;
+  color: #a5a09a;
+  margin: 0px;
+}
+
+@media (max-width: 600px) {
+  .main-banner .left-content form button {
+    position: unset !important;
+    right: unset !important;
+    top: unset !important;
+    padding: 12px 45px !important;
+  }
+  div.wpforms-container-full {
+    margin: 0px auto !important;
+  }
+  .wpforms-container .wpforms-submit-container {
+    padding-bottom: 40px !important;
+    margin-bottom: 40px;
+  }
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+}
+
+input:focus {
+  outline: 0;
+}
+input:focus {
+  box-shadow: 0 0 0 rgb(255, 255, 255) !important;
+}
+input {
+  background-color: transparent !important;
+  border: 0px solid !important;
+  outline: none !important;
 }

@@ -214,7 +214,7 @@ body {
 }
 
 ::selection {
-  background: #03a4ed;
+  background: transparent;
   color: #fff;
 }
 
@@ -914,6 +914,7 @@ Banner Style
   font-size: 18px;
   color: #c96a09;
   margin-bottom: 15px;
+  padding-top: 10px;
 }
 
 .main-banner .left-content h2 {
@@ -943,6 +944,7 @@ Banner Style
   height: 66px;
   align-self: center;
   position: relative;
+  z-index: 99;
 }
 
 .main-banner .left-content form button {
@@ -950,10 +952,10 @@ Banner Style
   right: 10px;
   top: 10px;
   display: inline-block;
-  background-color: #fff;
+  background-color: #fff !important;
   font-size: 15px;
   font-weight: 500;
-  color: black;
+  color: black !important;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
@@ -963,17 +965,17 @@ Banner Style
 }
 
 .main-banner .left-content form input {
-  width: 470px;
-  height: 66px;
-  background-color: #6c4848;
+  bottom: 0px;
+  background-color: transparent;
   border-radius: 33px;
   border: none;
   outline: none;
-  padding: 0px 25px;
+  padding: 0px 13px;
   color: #fff;
   letter-spacing: 0.25px;
   font-size: 15px;
   font-weight: 300;
+  max-width: 100%;
 }
 
 .main-banner .left-content form input::placeholder {
@@ -1492,7 +1494,8 @@ responsive
 
 @media (max-width: 992px) {
   .main-banner {
-    padding-top: 196px;
+    padding-top: 84px;
+    margin-bottom: 40px;
   }
   .main-banner .left-content {
     margin-right: 0px;
