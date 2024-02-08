@@ -224,10 +224,6 @@ body {
 }
 
 @media (max-width: 991px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
   .mobile-top-fix {
     margin-top: 30px;
     margin-bottom: 0px;
@@ -308,10 +304,6 @@ header
 .background-header {
   background-color: #fff !important;
   height: 80px !important;
-  position: fixed !important;
-  top: 0px;
-  left: 0px;
-  right: 0px;
 }
 
 .background-header .logo,
@@ -918,14 +910,14 @@ Banner Style
 }
 
 .main-banner .left-content h2 {
-  font-size: 74px;
+  font-size: 46px;
   font-weight: 700;
-  color: #ffffff;
+  color: #e5e2dd;
   line-height: 72px;
+  text-transform: uppercase;
 }
 
 .main-banner .left-content h2 em {
-  color: #52d503;
   font-style: normal;
 }
 
@@ -1500,7 +1492,7 @@ responsive
   .main-banner .left-content {
     margin-right: 0px;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 136px;
   }
   .main-banner:after {
     top: 76px;
